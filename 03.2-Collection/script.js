@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${planet.name}</h2>
                 </summary>
                 <div class='content'>
+                    <button class="close-button">&times;</button>
                     <h1>${planet.name}</h1>
                     <p><strong>Type:</strong> ${planet.type}</p>
                     <p><strong>Rayon:</strong> ${planet.radius_km} km</p>
@@ -139,4 +140,18 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(card);
         counter++
     });
+    
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const closeButtons = document.querySelectorAll('.close-button');
+    
+    closeButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const content = e.target.parentElement;
+            content.style.display = 'none';
+        });
+    });
+});
+
+

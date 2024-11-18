@@ -119,6 +119,16 @@ body {
                             border: 1px solid yellow;
                         }
                     }
+                    .content .close-button { 
+                        position: absolute; 
+                        top: -7px; 
+                        right: 10px; 
+                        background: none; 
+                        border: none; 
+                        color: yellow; 
+                        font-size: 35px; 
+                        cursor: pointer; 
+                    }
                 }
                 
             }
