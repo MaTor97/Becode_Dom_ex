@@ -14,4 +14,6 @@
 
     - Envoyez un message dans le log chaque fois que la barre d'espace est actionnée à la manière de l'exercice précédent.
 
-    
+    - Quand la touche l est pressée les logs sont supprimés.
+
+3. Créez un système pour que quand l'utilisateur clique sur l'un des carrés générés, un pop-up apparaisse avec la couleur du carré généré.
